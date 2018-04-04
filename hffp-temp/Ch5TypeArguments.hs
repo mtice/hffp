@@ -1,0 +1,29 @@
+module Ch5ta where
+-- 1. f :: a -> a -> a -> a; 𝑥 :: Char
+      -- f :: a -> (a -> a -> a)
+      -- a) f x :: Char -> Char -> Char
+-- 2. g :: a -> b -> c -> b;
+      -- g 0 'c' "woot"
+      -- d) Char
+-- 3. h :: (Num a, Num b) => a -> b -> b
+      -- h 1.0 2 :: Num b => b
+      -- d)
+-- 4. h :: (Num a, Num b) => a -> b -> b
+      -- h 1 (5.5 :: Double) :: Double
+      -- c)
+-- 5. jackel :: (Ord a, Eq b) => a -> b -> a
+      -- jackel "keyboard" "has the word jackal in it" :: [Char]
+      -- a)
+-- 6. jackel :: (Ord a, Eq b) => a -> b -> a
+      -- jackel "keyboard" :: Eq b => b -> [Char]
+      -- e)
+-- 7. kessel :: (Ord a, Num b) => a -> b -> a
+      -- kessel 1 2 :: (Ord a, Num a) => a
+         -- Num does not garauntee Ord. So original contstraint needs to remain
+      -- d)
+-- 8. kessel :: (Ord a, Num b) => a -> b -> a
+     -- kessel 1 (2 :: Integer) :: (Ord a, Num a) => a
+     -- a)
+-- 9. kessel :: (Ord a, Num b) => a -> b -> a
+     -- kessel (1 :: Integer) 2 :: Integer
+     -- c)

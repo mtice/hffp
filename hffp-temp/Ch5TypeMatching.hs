@@ -1,0 +1,11 @@
+module TypeMatching where
+-- 1.a not
+--    2.c) Bool -> Bool
+-- 1.b length
+--    2.d) [a] -> Bool
+-- 1.c concat
+--    2.b) [[a]] -> [a]
+-- 1.d head
+--    2.a) [a] -> a
+-- 1.e (<)
+--    2.e) Ord a => a -> a -> Bool
