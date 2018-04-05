@@ -3,7 +3,7 @@ module MoodSwing where
 data Mood = Blah | Woot deriving Show
 
 
-
+-- git test
 -- 1. What is the TYPE CONSTRUCTOR, or NAME OF THIS TYPE
 -- Mood
 
