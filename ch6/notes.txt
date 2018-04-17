@@ -1,0 +1,55 @@
+-  Typeclass instance declaration -
+instance Eq Trivial where
+   1     2     3     4 
+ Trivial' == Trivial' = True
+   5       6   7        8
+
+1. Keyword. begins declaration of typeclass instance
+2. Typeclass the instance is providing.
+3. Type the instance is being privided for.
+4. Terminates initial declaration and beginning of instance.
+   What follows is are methods being implemented.
+5. Data constructor.
+6. Infix function
+7. Second argument to ==
+8. What Trivial' == Trivial' should be.
+
+They use this fucker a lot
+data DayOfWeek =
+  Mon | Tue | Weds | Thu | Fri | Sat | Sun
+
+data Date =
+  Date DayOfWeek Int
+
+instance Eq DayOfWeek where 
+    (==) Tue Tue = True
+    (==) Mon Mon = True
+    (==) Weds Weds = True
+    (==) Thu Thu = True
+    (==) Fri Fri = True
+    (==) Sat Sat = True
+    (==) Sun Sun = True
+    (==) _ = False
+
+instance Eq Date where
+    (==) (Date weekday dayOfMonth)
+         (Date weekday' dayOfMonth') =
+      weekday == weekday'
+    && dayOfMonth = dayOfMonth'
+
+--- polymorphic paramater Types ---
+data Identity a =
+  Identity a
+
+-- typeclass contraint syntax
+instance Eq a => (Identity a) where
+  (==) (Identity v) (Identity v') =
+       v == v'
+
+-- Nothing with type (->)
+should have a Show instance as a general rule because (->)
+denotes a function rather than a constant value.
+-- a typeclass defines a set of functions and/or values;
+-- types have instances of that typeclass;
+-- the instances specify the ways that
+    type uses the functions of the typeclass;
