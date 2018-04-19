@@ -47,7 +47,54 @@ data Papu =
 
 -- Match the Types
 
--- 1. 
-i :: Num a => a
+-- 2-4. 
+f :: Float
+f = 1.0
+-- Can't do Num a => a because it's too General
+-- can do Fractional a => a and RealFrac a => a becuase
+-- Float has instances of both
+
+-- 5 - 6. 
+freud :: a -> a
+freud x = x
+
+-- freud :: Ord a => a -> a works
+-- freud :: Int a => a -> a works
+
+-- 7 
+myX = 1::Int
+sigmund :: Int -> Int
+sigmund x = myX
+-- sigmund :: a -> a negative. too general
+
+-- 8
+sigmund' :: Int -> Int
+sigmund' x = myX
+
+-- sigmund':: Numa => a -> a negative. Too general.
+
+-- 9
+-- import Data.List
+-- jung :: Ord a => [a] -> a
+-- jung xs = head (sort xs)
+
+-- jung :: [Int] -> Int
+-- yes. 
+
+-- 10. yes
+-- 11. no
+
+--  Type Kwon Do Two-- 
+chk :: Eq b => (a -> b) -> a -> b -> Bool
+chk f a b = (f a) == b
+
+arith :: Num b 
+         => (a->b)
+         -> Integer
+         -> a
+         -> b
+arith f i a = (f a) + fromInteger i
+-- :i fromInteger Integer -> a but + will type it to (f a) which is b
+
 
 
