@@ -31,5 +31,17 @@ addToN n
   | otherwise = 0
 
 multSum :: (Integral a) => a -> a -> a
-multSum x y
-  | 
+multSum _ 0 = 0
+multSum x y = x + (multSum x (y -1))
+
+data DividedResult =
+    Result Integer
+  | DividedByZero
+
+divByFix
+
+
+mc91 :: Integer a => a ->
+mc91 n
+  | n > 100 = n -10
+  | otherwise =  mc91 $ mc91 $ (n + 11)
