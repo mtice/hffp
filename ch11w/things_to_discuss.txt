@@ -1,0 +1,4 @@
+- getManu dealing with Planes. pg. 400. end of 11.6
+
+pg 411. can do newtype with constriants?
+

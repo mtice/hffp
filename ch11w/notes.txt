@@ -1,0 +1,43 @@
+datatypes are algebraic because:
+ we an describe the patterns of arguement structures using two basic operations: sum and product
+
+The cardinality of a datatype is the number of possible values it defines. That number can be as small as 0 or as large as infinite (for example, numeric datatypes, lists). 
+
+For cardinality, unary constructors are the identity function.
+
+A newtype cannot be a product type, sum type, or contain nullary constructors
+
+Type aliases create type constructors, not data constructors:
+  type TwoQs = (QuantumBool, QuantumBool)
+  vs.
+  data TwoQs =
+         MkTwoQs QuantumBool QuantumBool
+         deriving (Eq, Show)
+
+product type:: 
+
+data Person =
+  MkPerson String Int
+  deriving (Eq, Show)
+
+vs. record type::
+
+data Person =
+   Person { name :: String
+          , age :: Int }
+          deriving (Eq, Show)
+
+name and age are "named field accessors"
+:t name
+  name -> String
+
+> Person "Jerko" 17
+Person {name = "Jerko", age = 5}
+
+> let pp = Person "Jerko" 17
+> age pp
+17
+> name pp
+"Jerko"
+
+-- normal form for types is sum of products.
