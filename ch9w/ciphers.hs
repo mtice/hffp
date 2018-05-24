@@ -10,7 +10,7 @@ chToInt c = ord c - ord 'a'
 
 indexToUcode :: Int -> Int
 indexToUcode n = n + ord 'a'
-
+--- do it with uppercase.
 --GET THIS TO WORK.
 fShiftByNum :: (Int -> Int -> Int) -> Char -> Int -> Int
 fShiftByNum f c n = mod (f (chToInt c) n) ((+) 1 (chToInt 'z'))
