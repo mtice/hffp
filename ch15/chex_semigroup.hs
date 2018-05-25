@@ -9,6 +9,7 @@ data Trivial = Trivial deriving(Eq, Show)
 
 instance Semigroup Trivial where
     _ <> _ = Trivial
+    -- or (<>) = Trivial
 
 instance Monoid Trivial where
     mempty = Trivial

@@ -1,0 +1,18 @@
+PS1=$"λ [\u@\h] <\t> ::\W λ "
+
+export PATH="/cars:/usr/local/bin:/Users/cars/gitrepo/powertrain:/Users/martin.tice/bin:$PATH"
+
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA7_HOME=$(/usr/libexec/java_home -v 1.7)
+export JAVA8_HOME=$(/usr/libexec/java_home -v 1.8)
+
+alias luna='/cars/eclipse/Eclipse.app/Contents/MacOS/eclipse &'
+
+alias lls='ls -laf'
+alias tcpcs='lsof -i tcp:9000'
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion

@@ -44,6 +44,28 @@
   (major1) == 0 && (major2) == 2 && (minor) <= 3)
 #endif /* MIN_VERSION_split */
 
+/* package hspec-2.4.8 */
+#ifndef VERSION_hspec
+#define VERSION_hspec "2.4.8"
+#endif /* VERSION_hspec */
+#ifndef MIN_VERSION_hspec
+#define MIN_VERSION_hspec(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  4 || \
+  (major1) == 2 && (major2) == 4 && (minor) <= 8)
+#endif /* MIN_VERSION_hspec */
+
+/* package QuickCheck-2.10.1 */
+#ifndef VERSION_QuickCheck
+#define VERSION_QuickCheck "2.10.1"
+#endif /* VERSION_QuickCheck */
+#ifndef MIN_VERSION_QuickCheck
+#define MIN_VERSION_QuickCheck(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  10 || \
+  (major1) == 2 && (major2) == 10 && (minor) <= 1)
+#endif /* MIN_VERSION_QuickCheck */
+
 /* tool gcc-4.2.1 */
 #ifndef TOOL_VERSION_gcc
 #define TOOL_VERSION_gcc "4.2.1"
@@ -122,7 +144,7 @@
 #endif /* MIN_TOOL_VERSION_runghc */
 
 #ifndef CURRENT_COMPONENT_ID
-#define CURRENT_COMPONENT_ID "hangman-0.1.0.0-EREFNYZxV066jn4xnTD21F-hangman"
+#define CURRENT_COMPONENT_ID "hangman-0.1.0.0-N1vhT7Dd2dHCUglmRzgid-hangman"
 #endif /* CURRENT_COMPONENT_ID */
 #ifndef CURRENT_PACKAGE_VERSION
 #define CURRENT_PACKAGE_VERSION "0.1.0.0"

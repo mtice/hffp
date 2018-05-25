@@ -30,7 +30,7 @@ version = Version [0,1,0,0] []
 bindir, libdir, dynlibdir, datadir, libexecdir, sysconfdir :: FilePath
 
 bindir     = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/bin"
-libdir     = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/lib/x86_64-osx-ghc-8.2.2/hangman-0.1.0.0-EREFNYZxV066jn4xnTD21F-hangman"
+libdir     = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/lib/x86_64-osx-ghc-8.2.2/hangman-0.1.0.0-N1vhT7Dd2dHCUglmRzgid-hangman"
 dynlibdir  = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/lib/x86_64-osx-ghc-8.2.2"
 datadir    = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/share/x86_64-osx-ghc-8.2.2/hangman-0.1.0.0"
 libexecdir = "/Users/martin.tice/gitmartinatice/hffp/ch13/hangman/.stack-work/install/x86_64-osx/lts-11.10/8.2.2/libexec/x86_64-osx-ghc-8.2.2/hangman-0.1.0.0"
